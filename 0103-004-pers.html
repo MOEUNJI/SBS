@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pers</title>
+    <style>
+        /*#no-pers  {
+            -webkit-transform: rotateX(50deg);
+            perspective: 300px;
+        }*/
+        #no-pers, #pers {
+            float: left;
+        } 
+        .rotatex {
+            transform: rotate(50deg);
+            transform-origin: center;
+        }
+        #pers {
+            perspective: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="no-pers"></div>
+        <div class="rotatex">
+            <img src="001.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="pers">
+        <div class="rotatex">
+            <img src="001.jpg" alt="">   
+        </div>
+    </div>
+</body>
+</html>
